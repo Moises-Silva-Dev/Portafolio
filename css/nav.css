@@ -1,0 +1,35 @@
+/* Estilos personalizados para el nav */
+.navbar {
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+.nav-item a.nav-link {
+    border: 2px solid transparent;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.nav-item a.nav-link.active,
+.nav-item a.nav-link:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+#curso {
+    background-color: #a2aab1;
+}
+
+#curso h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}

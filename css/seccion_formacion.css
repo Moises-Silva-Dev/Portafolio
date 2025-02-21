@@ -1,0 +1,102 @@
+/* Estilos para la sección de formaciones */
+#formaciones {
+    padding: 60px 20px;
+    background-color: #dee2e6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#formaciones h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#formaciones p {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Estilos para el grid de formaciones */
+.formaciones-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.Cardfor {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    background: linear-gradient(-45deg, var(--color1) 0%, var(--color2) 100%);
+}
+
+.Cardfor:hover {
+    transform: scale(1.05);
+}
+
+.Cardfor-front-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Cardfor-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    line-height: 1.5;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.Cardfor:hover .Cardfor-content {
+    opacity: 1;
+}
+
+.logo-img {
+    width: 80px; /* Ajusta según el tamaño necesario */
+    height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .formaciones-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formaciones h2 {
+        font-size: 2rem;
+    }
+
+    #formaciones p {
+        font-size: 1rem;
+    }
+}

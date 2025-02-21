@@ -1,0 +1,57 @@
+/* Estilos para la sección "Sobre mí" */
+#sobre-mi {
+    padding: 60px 20px;
+    background-color: #e9ecef;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#sobre-mi h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#sobre-mi img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#sobre-mi p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+#sobre-mi p.lead {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #sobre-mi h2 {
+        font-size: 2rem;
+    }
+
+    #sobre-mi p {
+        font-size: 1rem;
+    }
+
+    #sobre-mi p.lead {
+        font-size: 1.2rem;
+    }
+
+    #sobre-mi .row {
+        text-align: center;
+    }
+
+    #sobre-mi img {
+        margin-bottom: 30px;
+    }
+}

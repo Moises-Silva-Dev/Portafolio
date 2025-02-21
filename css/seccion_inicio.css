@@ -1,0 +1,85 @@
+/* Estilos para la sección de inicio */
+#inicio {
+    padding: 100px 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#inicio h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#inicio h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#inicio p {
+    font-size: 1.5rem;
+    color: #A0CBA4; /* Color base */
+    margin-bottom: 30px;
+    text-shadow:
+        0 0 5px #A0CBA4, /* Sombra interna */
+        0 0 10px #A0CBA4, /* Sombra media */
+        0 0 20px #A0CBA4, /* Sombra externa */
+        0 0 40px #A0CBA4; /* Sombra más amplia */
+    animation: brilloNeon 1.5s infinite alternate; /* Animación de brillo */
+}
+
+/* Animación para el efecto de brillo */
+@keyframes brilloNeon {
+    from {
+        text-shadow:
+            0 0 5px #A0CBA4,
+            0 0 10px #A0CBA4,
+            0 0 20px #A0CBA4,
+            0 0 40px #A0CBA4;
+    }
+    to {
+        text-shadow:
+            0 0 10px #A0CBA4,
+            0 0 20px #A0CBA4,
+            0 0 40px #A0CBA4,
+            0 0 80px #A0CBA4;
+    }
+}
+
+#inicio .botones .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#inicio img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #inicio h1 {
+        font-size: 2.5rem;
+    }
+
+    #inicio h2 {
+        font-size: 1.8rem;
+    }
+
+    #inicio p {
+        font-size: 1.2rem;
+    }
+
+    #inicio .row {
+        text-align: center;
+    }
+
+    #inicio img {
+        margin-top: 30px;
+    }
+}

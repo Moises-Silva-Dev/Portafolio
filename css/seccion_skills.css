@@ -1,0 +1,67 @@
+/* Estilos para la sección de Skills */
+#skills {
+    padding: 60px 20px;
+    background-color: #adb5bd;
+    min-height: 100vh;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#skills p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Grid de tarjetas */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Estilos para las tarjetas */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s, opacity 0.5s ease;
+    text-align: center;
+    opacity: 1; /* Inicialmente visible */
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card svg {
+    transition: stroke 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--hover-color);
+}
+
+.card svg, .card-title {
+    transition: color 0.3s;
+    color: black;
+}
+
+.card:hover svg {
+    stroke: white; /* Cambia el color del ícono cuando se hace hover */
+}
+
+.card:hover h5 {
+    color: white;
+}
+
+/* Efecto de desvanecimiento */
+.hidden {
+    display: none; /* Oculta completamente las tarjetas */
+}
