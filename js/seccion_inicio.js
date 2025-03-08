@@ -2,7 +2,7 @@
 const textos = [
     "<Bienvenido a mi Portafolio/>",
     "<Ing. Moises Silva Gonzalez/>",
-    "Web Developer"
+    "Web Developer | Technical Support"
 ];
 
 const velocidadEscritura = 100; // Velocidad en milisegundos
